@@ -20,6 +20,10 @@ import Login from "./views/login";
 import NavBar from "./components/nav-bar";
 import ChartsPage from "./views/chart";
 import ConfirmationInscription from "./views/jardin/confirmation-inscription";
+import ListJardin from "./views/jardin/list";
+import ListEnfants from "./views/jardin/list-enfants";
+import ListParent from "./views/parents/list";
+import ListEnfantsParent from "./views/parents/list-enfants";
 
 function App() {
   const { userId, token, login, logout, user } = UserAuth();
@@ -30,6 +34,11 @@ function App() {
       <React.Fragment>
         <Route exact path="/" component={ChartsPage} />
         <Route path="/Confirm-inscription" component={ConfirmationInscription} />
+        <Route path="/List-jardin" component={ListJardin} />
+        <Route path="/List-enfant/:id" component={ListEnfants} />
+        <Route path="/List-parent" component={ListParent} />
+        <Route path="/List-enfant-parent/:id" component={ListEnfantsParent} />
+
       </React.Fragment>
     );
   } else {

@@ -157,6 +157,25 @@ export default function NavBar(props) {
               <ListItemText primary="Confirmation inscription" />
             </ListItem>
           </Link>
+
+          <Link to="/List-jardin" style={{textDecoration:'none',color:"black"}}>
+            <ListItem button key="">
+              <ListItemIcon>
+                {" "}
+                <DashboardIcon style={{ color: "#039be5" }} />
+              </ListItemIcon>
+              <ListItemText primary="Listes jardins" />
+            </ListItem>
+          </Link>
+          <Link to="/List-parent" style={{textDecoration:'none',color:"black"}}>
+            <ListItem button key="">
+              <ListItemIcon>
+                {" "}
+                <DashboardIcon style={{ color: "#039be5" }} />
+              </ListItemIcon>
+              <ListItemText primary="Listes parents" />
+            </ListItem>
+          </Link>
           
           
         </List>
