@@ -176,6 +176,16 @@ export default function NavBar(props) {
               <ListItemText primary="Listes parents" />
             </ListItem>
           </Link>
+
+          <Link to="/reclamation" style={{textDecoration:'none',color:"black"}}>
+            <ListItem button key="">
+              <ListItemIcon>
+                {" "}
+                <DashboardIcon style={{ color: "#039be5" }} />
+              </ListItemIcon>
+              <ListItemText primary="Reclamation" />
+            </ListItem>
+          </Link>
           
           
         </List>

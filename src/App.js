@@ -24,6 +24,7 @@ import ListJardin from "./views/jardin/list";
 import ListEnfants from "./views/jardin/list-enfants";
 import ListParent from "./views/parents/list";
 import ListEnfantsParent from "./views/parents/list-enfants";
+import ListReclamation from "./views/reclamation/liste-reclamation";
 
 function App() {
   const { userId, token, login, logout, user } = UserAuth();
@@ -38,6 +39,7 @@ function App() {
         <Route path="/List-enfant/:id" component={ListEnfants} />
         <Route path="/List-parent" component={ListParent} />
         <Route path="/List-enfant-parent/:id" component={ListEnfantsParent} />
+        <Route path="/reclamation" component={ListReclamation} />
 
       </React.Fragment>
     );
